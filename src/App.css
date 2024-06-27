@@ -1,0 +1,123 @@
+/*---------------- BASE STYLES ----------------*/
+
+.app {
+  font-size: 15px;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  background-color: var(--secondary-color);
+}
+
+.app-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(140deg, rgba(32,99,17,0.8456759412749475) 0%, rgba(44,62,80,1) 50%);
+  padding: 10px;
+  color: white;
+}
+
+.app-container {
+  height: calc(100%- 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 20px;
+  padding: 20px;
+}
+
+/* action button styles */
+.action-button {
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Primary button styles */
+.action-button-primary {
+  background-color:var(--primary-button); /* Primary color */
+}
+
+.action-button-primary:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+.action-button-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+}
+
+.action-button-primary:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* Danger button styles */
+.action-button-danger {
+  background-color: var(--secondary-button); /* Danger color */
+}
+
+.action-button-danger:hover {
+  background-color: #c0392b; /* Darker shade for hover */
+}
+
+.action-button-danger:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5); /* Custom focus outline */
+}
+
+.action-button-danger:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+
+
+/*---------------- ACTIONS STYLES ----------------*/
+
+.actions-panel {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover {
+  background-color: #f5f5f5;
+}
+
+.custom-file-upload:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+input[type="file"] {
+  display: none; /* Hide the real file input */
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
