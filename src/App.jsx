@@ -5,8 +5,6 @@ import FileUpload from './components/FileUpload/FileUpload';
 import { SyncLoader } from 'react-spinners';
 import './App.css';
 
-
-
 function App() {
   const [xmlData, setXmlData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -29,7 +27,6 @@ function App() {
     reader.onload = (e) => {
       const xmlString = e.target.result;
       const jsonObj = xmljs.xml2js(xmlString, { compact: true });
-      console.log(jsonObj);
 
       // Simulate a delay
       setTimeout(() => {
