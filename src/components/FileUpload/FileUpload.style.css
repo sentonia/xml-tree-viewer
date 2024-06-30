@@ -1,23 +1,23 @@
-  .file-upload-input {
-    display: none;
-  }
-  
-  .file-upload-label {
-    background-color: var(--accent-color-1);
-    color: var(--secondary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .file-upload-label:hover {
-    background-color: var(--accent-color-2);
-  }
+.file-upload-input {
+  display: none;
+}
 
-  .file-upload-label.disabled {
-    background-color: var(--text-secondary);
-    cursor: not-allowed;
-  }
+.file-upload-label {
+  background-color: var(--accent-color-1);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.file-upload-label:hover {
+  background-color: var(--accent-color-2);
+}
+
+.file-upload-label.disabled {
+  background-color: var(--text-secondary);
+  cursor: not-allowed;
+}

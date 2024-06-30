@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import xmljs from 'xml-js';
 import XMLViewer from './components/XMLViewer/XMLViewer';
 import FileUpload from './components/FileUpload/FileUpload';
@@ -53,28 +53,30 @@ function App() {
       <header className="app-header">
         <h1>XML Tree-tment🌳</h1>
       </header>
-      <main className='app-container'>
-        <div className='actions-panel'>
+      <main className="app-container">
+        <div className="actions-panel">
           <FileUpload
             onFileChange={handleFileUpload}
             disabled={canProcessXML}
             ref={fileInputRef}
-            loading={loading} />
+            loading={loading}
+          />
           <button
             type="button"
             className="action-button action-button-danger"
             onClick={handleClearXML}
-            disabled={canClearXML}>
+            disabled={canClearXML}
+          >
             Clear XML
           </button>
         </div>
         {loading ? (
-          <div className='loader'>
-            <SyncLoader color={"#30494C"} loading={loading} size={10} />
+          <div className="loader">
+            <SyncLoader color={'#30494C'} loading={loading} size={10} />
           </div>
-        ) :
+        ) : (
           <XMLViewer xmlData={xmlData} />
-        }
+        )}
       </main>
     </div>
   );

@@ -13,13 +13,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:linear-gradient(140deg, rgba(32,99,17,0.8456759412749475) 0%, rgba(44,62,80,1) 50%);
+  background: linear-gradient(
+    140deg,
+    rgba(32, 99, 17, 0.8456759412749475) 0%,
+    rgba(44, 62, 80, 1) 50%
+  );
   padding: 10px;
   color: white;
 }
 
 .app-container {
-  height: calc(100%- 100px);
+  height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,12 +42,14 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
 }
 
 /* Primary button styles */
 .action-button-primary {
-  background-color:var(--primary-button); /* Primary color */
+  background-color: var(--primary-button); /* Primary color */
 }
 
 .action-button-primary:hover {
@@ -81,8 +87,6 @@
   opacity: 0.65;
 }
 
-
-
 /*---------------- ACTIONS STYLES ----------------*/
 
 .actions-panel {
@@ -111,7 +115,7 @@
   cursor: not-allowed;
 }
 
-input[type="file"] {
+input[type='file'] {
   display: none; /* Hide the real file input */
 }
 
