@@ -72,7 +72,7 @@ function App() {
         </div>
         {loading ? (
           <div className="loader">
-            <SyncLoader color={'#30494C'} loading={loading} size={10} />
+            <SyncLoader color={'#1ABC9C'} loading={loading} size={10} />
           </div>
         ) : (
           <XMLViewer xmlData={xmlData} />
