@@ -1,8 +1,44 @@
-# React + Vite
+# XML Tree Viewer 🌳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+XML Tree Viewer is a web application that allows users to upload an XML file, parse it, and visualize its structure as an interactive tree diagram. The application is built with modern web development technologies to ensure a smooth and responsive user experience.
 
-Currently, two official plugins are available:
+## Features ✨
+- 📂 Upload an XML file.
+- 🔍 Parse the XML file to a JavaScript object.
+- 🌲 Display the parsed XML data as a tree diagram.
+- 🖱️ Interactive tree visualization for easy exploration of XML structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used 🛠️
+- **Vite:** A fast and modern build tool that significantly improves the development experience.
+- **React JS:** A popular JavaScript library for building user interfaces.
+- **react-json-view:** A library for rendering JSON data in a tree view, used here for the XML data representation.
+- **xml-js:** A library to convert XML data to JavaScript objects and vice versa.
+
+## Installation 📥
+
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (v14 or above)
+- npm (v6 or above)
+
+### Steps
+1. **Clone the repository:**
+   ```sh
+   git clone <repository_url>
+   cd xml-tree-viewer
+
+2. **Install dependencies:**
+     ```sh
+   npm install
+
+3. **Start development server:**
+    ```sh
+   npm run dev
+   
+## Running Tests 🧪
+
+1. **Ensure dependencies are installed**
+2. **Run tests using:**
+    ```sh
+   npm run test
