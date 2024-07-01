@@ -23,9 +23,12 @@ Ensure you have the following installed:
 - npm (v6 or above)
 
 ### Steps
-1. **Clone the repository:**
+1. **Clone the repository or unzip the folder:**
    ```sh
    git clone <repository_url>
+   cd xml-tree-viewer
+
+   *if  you have the zip folder unzip it into a prefered location and redirect 
    cd xml-tree-viewer
 
 2. **Install dependencies:**
